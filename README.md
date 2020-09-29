@@ -2,6 +2,8 @@
 
 
 ## 计算机图形学课程专栏
+
+
 ### Lab0
   <img src="https://github.com/May19990823/May19990823.github.io/blob/master/p201812213502036.png">
 
@@ -18,7 +20,5 @@
 
 
 
-# Header 1
-## Header 2
-### Header 3
+
 
