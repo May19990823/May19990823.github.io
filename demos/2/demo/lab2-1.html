@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html;charset=utf-8">
+    <title>Chap2 Demo Sierpinski Gasket </title>
+    <script id="vertex-shader" type="x-shader/x-vertex">
+	attribute vec4 vPosition;
+	void main(){
+		gl_Position = vPosition;
+	}
+	</script>
+    <script id="fragment-shader" type="x-shader/x-fragment">
+	precision mediump float;
+	void main(){
+		gl_FragColor = vec4( 1.0, 0.5, 0.5, 1.0 );
+	}
+	</script>
+    <script type="text/javascript" src="../common/webgl-utils.js"></script>
+    <script type="text/javascript" src="../common/initShaders.js"></script>
+    <script type="text/javascript" src="../common/gl-matrix-min.js"></script>
+
+    <script type="text/javascript" src="../ch02/gasket-triangles.js"></script>
+
+</head>
+
+
+
+<body>
+
+    <h2>Lab2-1</h2>
+
+    <!--<canvas id="gl-canvas" width="400" height="400">你的浏览器不支持HTML5 canvas元素</canvas> !-->
+	
+	<p>选择层数：<input type="range" id="1" max="7" min="0"></p>
+	<input type="button" id="submit" value="确定" onclick="cinin();initTriangles()">
+    <canvas id="gl-canvas" width="400" height="400">你的浏览器不支持HTML5 canvas元素</canvas>
+</body>
+
+
+
+</html>
